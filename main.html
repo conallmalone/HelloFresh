@@ -1,0 +1,117 @@
+<head>
+<style>
+* {
+	box-sizing: border-box;
+	font-family: Agrandir,Verdana,Geneva,sans-serif;
+}
+
+.row {
+	max-width: 900px;
+	position:relative;
+	margin: auto;
+}
+
+.column {
+	position: relative;
+	min-height: 360px;
+	float: left;
+	width: 30%;
+	overflow: hidden;
+	border-radius: 5px;
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+
+.column:not(:first-child) {
+	margin-left: 20px;
+}
+
+.column img {
+	width: 100%;
+}
+
+.column-content {
+	padding: 8px;
+}
+
+.column button {
+	font-size: 18px;
+	color: white;
+	width: 95%;
+	background-color: #2a7a46;
+	border-radius: 5px;
+	padding: 10px 20px;
+	position: absolute;
+	bottom: 10px;
+	left: 50%;
+	transform: translateX(-50%);
+	border: none;
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+
+h2 {
+	font-size: 14px;
+}
+
+p {
+	font-size: 12px;
+}
+
+img.icon {
+    width: 16px;
+    margin-right: 10px;
+	fill: white!important;
+}
+
+@media screen and (max-width: 600px) {
+	.column {
+		width: 100%;
+		text-align: center;
+		margin-bottom: 10px;
+	}
+	
+	.column:not(:first-child) {
+		margin-left: 0;
+	}
+	
+	.column-content {
+		text-align: left;
+	}
+	
+	.column button {
+		position: static;
+		transform: none;
+		margin-bottom: 2px;
+	}
+}
+
+</style>
+</head>
+<body>
+<div class="row">
+	<div class="column">
+		<img src="images/image1.jpg" alt="Description">
+		<div class="column-content">
+			<h2>Pork salmon steak with bean vegetables</h2>
+			<p>served with homemade thyme and herb butter</p>
+		</div>
+		<a href="https://www.hellofresh.de/" target="_blank"><button><img src="./images/cooking.svg" class="icon"/>Cook Now</button></a>
+	</div>
+	<div class="column">
+		<img src="images/image2.jpg" alt="Description">
+		<div class="column-content">
+			<h2>Salmon fillet with a lemon crust</h2>
+			<p>with cucumber salad in fresh dill yoghurt dressing</p>
+		</div>
+		<a href="https://www.hellofresh.de/" target="_blank"><button><img src="./images/cooking.svg" class="icon"/>Cook Now</button></a>
+	</div>
+	<div class="column">
+		<img src="images/image3.jpg" alt="Description">
+		<div class="column-content">
+			<h2>Chicken leg with celeriac mash</h2>
+			<p>colorful oven carrots and balsamic sauce</p>
+		</div>
+		<a href="https://www.hellofresh.de/" target="_blank"><button><img src="./images/cooking.svg" class="icon"/>Cook Now</button></a>
+	</div>
+</div>
+</body>
